@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="owr-4P-nGo"/>
+                        <viewControllerLayoutGuide type="bottom" id="eMz-MU-nbf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type here" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NHc-cg-AOG">
+                                <rect key="frame" x="20" y="53" width="280" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="filter:" destination="2" eventType="editingChanged" id="8ff-1D-d4Z"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Filtered text goes here" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="qwz-iU-t5z">
+                                <rect key="frame" x="20" y="91" width="280" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="F61-fd-Aw8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qwz-iU-t5z" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="5ia-VE-4QL"/>
+                            <constraint firstItem="NHc-cg-AOG" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="ATS-Uu-EAz"/>
+                            <constraint firstItem="qwz-iU-t5z" firstAttribute="top" secondItem="NHc-cg-AOG" secondAttribute="bottom" constant="8" symbolic="YES" id="Hw7-m4-4s8"/>
+                            <constraint firstAttribute="trailing" secondItem="qwz-iU-t5z" secondAttribute="trailing" constant="20" symbolic="YES" id="Jy1-k4-Zmp"/>
+                            <constraint firstAttribute="trailing" secondItem="NHc-cg-AOG" secondAttribute="trailing" constant="20" symbolic="YES" id="Zgl-Dx-swK"/>
+                            <constraint firstItem="NHc-cg-AOG" firstAttribute="top" secondItem="3" secondAttribute="top" constant="53" id="pcv-kq-7KZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="filteredTextLabel" destination="qwz-iU-t5z" id="YLw-PS-406"/>
+                        <outlet property="inputTextField" destination="NHc-cg-AOG" id="YUy-Vy-SkR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

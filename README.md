@@ -3,7 +3,7 @@
 ------------------
 
 
-This project provides obj-c method to filter the profanity word.
+This project provides obj-c method to filter the profanity word inspired by [IODProfanityFilter](https://github.com/IslandOfDoom/IODProfanityFilter)
 
 Just open the demo in XCode and run it.
 
