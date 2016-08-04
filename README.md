@@ -17,7 +17,7 @@ the output will be
 
 The key method is
 
-```
+```objective-c
 /**
  Returns a string with offending words replaced by "∗"
  */
@@ -27,7 +27,7 @@ The key method is
 __Sample__
 
 
-```
+```objective-c
 [[KBFProfanityFilter sharedInstance] filteringString:@"谁有色情图片"];// outputs: "谁有**图片"
 ```
 
